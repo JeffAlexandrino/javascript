@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX 5</title>
+    <style>
+        body {
+            background-color: rgb(122, 54, 248);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
 </head>
 <body>
     <h1>Primeiros passos com DOM</h1>
     <hr>
     <p>Aqui vai o resultado</p>
-    <div>Clique em Mim</div>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id= 'msg'>Clique em Mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+    </script>
 </body>
 </html>
